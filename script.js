@@ -1,6 +1,6 @@
 function addCourse() {
  var row = document.createElement(’div’);
- row.className = ’course-row’; 
+ row.className = ’course-row’;
  row.innerHTML =
  ’<label>Course:</label>’ +
  ’<input type="text" name="course[]" ’ +
