@@ -1,37 +1,37 @@
  <!DOCTYPE html>
-2 <html lang="en">
-3 <head>
-4 <meta charset="UTF-8">
-5 <title>GPA Calculator</title>
-6 <link rel="stylesheet" href="style.css">
-7 <script src="script.js"></script>
-8 </head>
-9 <body>
-10 <h1>GPA Calculator</h1>
-11 <form action="calculate.php" method="post"
-12 onsubmit="return validateForm();">
-13 <div id="courses">
-14 <div class="course-row">
-15 <label>Course:</label>
-16 <input type="text" name="course[]"
-17 placeholder="e.g. Mathematics" required>
-18 <label>Credits:</label>
-19 <input type="number" name="credits[]"
-20 placeholder="e.g. 3" min="1" required>
-21 <label>Grade:</label>
-22 <select name="grade[]">
-23 <option value="4.0">A</option>
-24 <option value="3.0">B</option>
-25 <option value="2.0">C</option>
-26 <option value="1.0">D</option>
-27 <option value="0.0">F</option>
-28 </select>
-29 </div>
-30 </div>
-31 <button type="button" onclick="addCourse()">
-32 + Add Course
-33 </button><br><br>
-34 <input type="submit" value="Calculate GPA">
-35 </form>
-36 </body>
-37 </html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <title>GPA Calculator</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js"></script>
+ </head>
+ <body>
+  <h1>GPA Calculator</h1>
+ <form action="calculate.php" method="post"
+ onsubmit="return validateForm();">
+ <div id="courses">
+ <div class="course-row">
+ <label>Course:</label>
+ <input type="text" name="course[]"
+ placeholder="e.g. Mathematics" required>
+ <label>Credits:</label>
+ <input type="number" name="credits[]"
+ placeholder="e.g. 3" min="1" required>
+  <label>Grade:</label>
+ <select name="grade[]">
+ <option value="4.0">A</option>
+ <option value="3.0">B</option>
+ <option value="2.0">C</option>
+ <option value="1.0">D</option>
+ <option value="0.0">F</option>
+ </select>
+ </div>
+ </div>
+ <button type="button" onclick="addCourse()">
+ + Add Course
+ </button><br><br>
+ <input type="submit" value="Calculate GPA">
+ </form>
+ </body>
+ </html>
